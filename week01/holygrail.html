@@ -13,6 +13,10 @@
         <meta name="author" content="Ednilson">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"
+        crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" 
+        rel="stylesheet">
     </head>
     <body>
         <nav>
@@ -27,7 +31,8 @@
         </header>
 
         <main>
-            <h2>WDD 230: Course Activity Portal</h2>
+            <div id="main-div">
+            <h2 id="main-h2">WDD 230: Course Activity Portal</h2>
             <section id='learning-activities' class="card">
             <h3>learning-activities</h3>
             <ul>
@@ -52,11 +57,28 @@
             <p>Today's Weather</p>
             <p>Visitor Count</p>
         </section>
+    </div>
         </main>
+        <footer>
+            <p>&copy; Ednilson Bambo, Mozambique</p>
+            <p id="lastModified" class="highlight"></p>
+           
+        </footer>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        
+        <!-- <script>
+            var date = new Date();
+            var current_date = date.getFullYear();
+            document.getElementById("year").innerHTML = current_date;
+        </script> -->
+
+<script>
+    let text = document.lastModified;
+    document.getElementById("lastModified").innerHTML = text;
+    </script>
+    <script src="scripts/getDates.js" async defer></script>
     </body>
 </html>
