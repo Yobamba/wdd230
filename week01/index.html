@@ -3,21 +3,82 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="en-US">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>WDD 230 - Portal - [Ednilson Bambo]</title>
-        <meta name="description" content="My homepage for the WDD230 course. ">
+        <title></title>
+        <meta name="description" content="My name is Ednilson Bambo. This is a page for my WDD230 Assignment. ">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Ednilson">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"
+        crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" 
+        rel="stylesheet">
     </head>
     <body>
+        <nav>
+            <img src="images/hamburger-menu-icon.svg">
+            <a href="https://www.linkedin.com/in/ednilsonbambo/" target="_blank">LinkedIn</a>
+            <a href="">BYU-Idaho</a>
+        </nav>
+
+        <header>
+            <img src="images/profile-pic.png" alt="profile-pic">
+            <h1 id="my name">Ednilson Bambo</h1>
+        </header>
+
+        <main>
+            <div id="main-div">
+            <h2 id="main-h2">WDD 230: Course Activity Portal</h2>
+            <section id='learning-activities' class="card">
+            <h3>learning-activities</h3>
+            <ul>
+                <li>
+                    <p>Week 01 <a href="holygrail.html">Holy Grail</a></p>
+                    <p>Week 02 <a href=""></a></p>
+                    <p>Week 03 <a href=""></a></p>
+                    <p>Week 04 <a href=""></a></p>
+                    <p>Week 05 <a href=""></a></p>
+                    <p>Week 06 <a href=""></a></p>
+                    <p>Week 07 <a href=""></a></p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="project" class="card">
+            <h3>Project</h3>
+            <p><a href="">Chamber project</a></p>
+        </section>
+        <section id="information" class="card">
+            <h3>information</h3>
+            <p>Today's Weather</p>
+            <p>Visitor Count</p>
+        </section>
+    </div>
+        </main>
+        <footer>
+            <p>&copy; Ednilson Bambo, Mozambique</p>
+            <p id="lastModified" class="highlight"></p>
+           
+        </footer>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        
+        <!-- <script>
+            var date = new Date();
+            var current_date = date.getFullYear();
+            document.getElementById("year").innerHTML = current_date;
+        </script> -->
+
+<script>
+    let text = document.lastModified;
+    document.getElementById("lastModified").innerHTML = text;
+    </script>
+    <script src="scripts/getDates.js" async defer></script>
     </body>
 </html>
