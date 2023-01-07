@@ -21,14 +21,8 @@ nav a {
 
 
 
-header {
-    background-color: lightgrey;
-}
 
-#my-pic {
-    margin-left: -100px;
-   
-}
+
 main {
     max-width: 760px;
     display: grid;
@@ -40,6 +34,15 @@ main {
     padding-top:30px;
     padding-bottom: 30px;
    
+}
+
+#my-pic {
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+#my-name {
+    margin: auto;
 }
 
 #learning-activities {
@@ -102,8 +105,10 @@ a {
 header {
     display: flex;
     padding: 1rem;
-    justify-content: center;
-}
+    background-color: lightgrey;
+    }
+    
+  
 
 ul {
     list-style-type: none;
