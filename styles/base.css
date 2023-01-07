@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+   
     
 }
 nav {
@@ -43,6 +44,7 @@ main {
 
 #my-name {
     margin: auto;
+    
 }
 
 #learning-activities {
@@ -92,6 +94,7 @@ section {
 #main-h2 {
     margin:0 auto;
     text-align: center;
+    padding-top: 20px;
   
 }
 
@@ -106,6 +109,8 @@ header {
     display: flex;
     padding: 1rem;
     background-color: lightgrey;
+   
+   
     }
     
   
@@ -117,4 +122,6 @@ ul {
 footer {
     background-color: rgb(93, 93, 167);
     color:white;
+    padding: 0.5rem;
+   
 }
