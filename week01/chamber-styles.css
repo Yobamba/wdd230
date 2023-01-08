@@ -8,6 +8,14 @@
     --accent2-color: #DEC5E3;
 }
 
+p {
+    font-family: Roboto;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+
 .primary {
     background-color: #001B2E;
     color: white;
