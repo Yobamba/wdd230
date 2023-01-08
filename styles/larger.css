@@ -12,4 +12,9 @@
         display: block;
 
     }
+
+    #my-name {
+        margin: auto;
+        padding-left: 30px;
+    }
 }
