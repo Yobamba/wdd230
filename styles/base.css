@@ -124,6 +124,9 @@ footer {
     background-color: rgb(93, 93, 167);
     color:white;
     padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
    
    
 }
