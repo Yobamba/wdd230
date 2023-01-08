@@ -1,15 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #001B2E;
+    --secondary-color: #618985;
+    --accent1-color: #F2F3D9;
+    --accent2-color: #DEC5E3;
+}
+
+.primary {
+    background-color: #001B2E;
+    color: white;
+}
+
+.secondary {
+    background-color: #618985;
+    color: white;
+}
+
+.accent1 {
+    background-color: #F2F3D9;
+}
+
+.accent2 {
+    background-color: #DEC5E3;
+}
 body {
     font-family: 'Montserrat', sans-serif;
+  
    
     
 }
 
+
 header {
-    background-color: rgb(40,116,252);
+    background-color: #001B2E;
+    display: flex;
+    justify-content: center;
+    
 }
+
+#site-name {
+    color: white;
+}
+/* 
+ul {
+    list-style-type: none;
+} */
 
 nav {
     background-color: rgb(122,220,180);
 }
+
