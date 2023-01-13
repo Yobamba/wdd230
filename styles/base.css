@@ -82,6 +82,7 @@ main {
 
 .card h3 {
     background-color: rgb(93, 93, 167);
+    color:white;
     border-radius: 20px 20px 0 0;
     /* box-shadow: 5px 5px 15px; */
     padding: 10px;
