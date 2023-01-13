@@ -9,7 +9,7 @@ body {
 nav {
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgb(93, 93, 167);
+    background-color: #38384d;
     justify-content: right;
     align-items: center;
     gap: 1rem;
@@ -80,8 +80,9 @@ main {
     padding-bottom: 5px;
 }
 
+
 .card h3 {
-    background-color: rgb(93, 93, 167);
+    background-color: #38384d;
     color:white;
     border-radius: 20px 20px 0 0;
     /* box-shadow: 5px 5px 15px; */
@@ -126,7 +127,7 @@ ul {
 }
 
 footer {
-    background-color: rgb(93, 93, 167);
+    background-color: #38384d;
     color:white;
     padding: 0.5rem;
     bottom: 0;
