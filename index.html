@@ -380,14 +380,30 @@
     </head>
     <body>
         <nav>
-            <img src="images/hamburger-menu-icon.svg">
+            <img id="menu-button" src="images/hamburger-menu-icon.svg" alt="burger-menu-icon">
             <a href="https://www.linkedin.com/in/ednilsonbambo/" target="_blank">LinkedIn</a>
             <a href="">BYU-Idaho</a>
         </nav>
 
         <header>
+
+            <script>
+                
+                
+                let text = document.lastModified;
+                document.getElementById("lastModified").innerHTML = text;
+                
+                </script>
+
             <img src="images/profile-pic.jpg" alt="profile-pic" id="my-pic" >
             <h1 id="my-name">Ednilson Bambo</h1>
+            
+            <ul class="menu">
+                <li title="search"><a href="index.html" class="menu-item" id="search">Search</a></li>
+                <li title="plan"><a href="index.html" class="menu-item" id="plan">Site Plan</a></li>
+                <li title="about"><a href="index.html" class="menu-item" id="about">About Us</a></li>
+            </ul>
+        
         </header>
         <h2 id="main-h2">WDD 230: Course Activity Portal</h2>
         <main>
@@ -437,10 +453,8 @@
             document.getElementById("year").innerHTML = current_date;
         </script> -->
 
-<script>
-    let text = document.lastModified;
-    document.getElementById("lastModified").innerHTML = text;
-    </script>
+
     <script src="scripts/getDates.js" async defer></script>
+    <script src="scripts/responsive.js" async defer></script>
     </body>
 </html>

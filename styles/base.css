@@ -22,8 +22,49 @@ nav a {
 }
 
 
+.menu {
+	position: fixed;
+	top: 40;
+	right: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: #f7f7f7;
+	z-index: 10;
+	overflow: hidden;
+	box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+}
+.menu li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 12rem;
+	padding: 1rem;
+	color: #72739f;
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	transition: background 0.5s ease-in-out;
+}
 
+.menu li a:hover,
+.menu li:first-child a {
+	background: #267fdd;
+	color: #fff;
+}
 
+li a.menu-item {
+	display: none;
+}
+
+li a.open {
+	display: flex;
+}
+
+.close::before {
+	content: "❌ ";
+}
+
+/* This is where it starts */
 
 main {
     max-width: 760px;
@@ -47,10 +88,60 @@ main {
 
 }
 
+
+
+
+li a.menu-item {
+	display: none;
+}
+
+li a.open {
+	display: flex;
+}
+
+
+
 #my-name {
     margin: auto;
     padding-right: 190px;
 }
+
+
+
+/* .menu-item {
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0px;
+ 
+    display: flex;
+    
+   
+} */
+
+
+
+
+
+
+
+
+/* #search {
+    color:white;
+    margin-right: 45px;
+}
+
+
+
+#plan {
+    color: white;
+    margin-right: 45px;
+}
+
+#about {
+    margin-right: 45px;
+} */
 
 #learning-activities {
     grid-column: 1/2;
