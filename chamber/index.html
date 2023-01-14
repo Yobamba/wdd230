@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Setubal Chamber</title>
+        <meta name="description" content="My name is Ednilson Bambo. This is a page for my WDD230 Assignment. ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ednilson">
+
+        <meta property="og:title" content="WDD 230 - Portal - Ednilson Bambo">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dailysabah.com%2Flife%2Ftravel%2Fmagical-secluded-paradise-of-portugals-setubal-peninsula&psig=AOvVaw0sTA1I7m3-EEL3Ro13rCUf&ust=1673632725277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCmpPLNwvwCFQAAAAAdAAAAABAE">
+        <meta property="og:url" content="https://yobamba.github.io/wdd230/">
+
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"
+        crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" 
+        rel="stylesheet"> 
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="styles/normalize.css">
+
+        <style>
+                /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+    /* Document
+    ========================================================================== */
+
+    /**
+    * 1. Correct the line height in all browsers.
+    * 2. Prevent adjustments of font size after orientation changes in iOS.
+    */
+
+    html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    }
+
+    /* Sections
+    ========================================================================== */
+
+    /**
+    * Remove the margin in all browsers.
+    */
+
+    body {
+    margin: 0;
+    }
+
+    /**
+    * Render the `main` element consistently in IE.
+    */
+
+    main {
+    display: grid;
+    }
+
+    /**
+    * Correct the font size and margin on `h1` elements within `section` and
+    * `article` contexts in Chrome, Firefox, and Safari.
+    */
+
+    h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    }
+
+    /* Grouping content
+    ========================================================================== */
+
+    /**
+    * 1. Add the correct box sizing in Firefox.
+    * 2. Show the overflow in Edge and IE.
+    */
+
+    hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+    }
+
+    /**
+    * 1. Correct the inheritance and scaling of font size in all browsers.
+    * 2. Correct the odd `em` font sizing in all browsers.
+    */
+
+    pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+    }
+
+    /* Text-level semantics
+    ========================================================================== */
+
+    /**
+    * Remove the gray background on active links in IE 10.
+    */
+
+    a {
+    background-color: transparent;
+    }
+
+    /**
+    * 1. Remove the bottom border in Chrome 57-
+    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+    */
+
+    abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+    }
+
+    /**
+    * Add the correct font weight in Chrome, Edge, and Safari.
+    */
+
+    b,
+    strong {
+    font-weight: bolder;
+    }
+
+    /**
+    * 1. Correct the inheritance and scaling of font size in all browsers.
+    * 2. Correct the odd `em` font sizing in all browsers.
+    */
+
+    code,
+    kbd,
+    samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+    }
+
+    /**
+    * Add the correct font size in all browsers.
+    */
+
+    small {
+    font-size: 80%;
+    }
+
+    /**
+    * Prevent `sub` and `sup` elements from affecting the line height in
+    * all browsers.
+    */
+
+    sub,
+    sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    }
+
+    sub {
+    bottom: -0.25em;
+    }
+
+    sup {
+    top: -0.5em;
+    }
+
+    /* Embedded content
+    ========================================================================== */
+
+    /**
+    * Remove the border on images inside links in IE 10.
+    */
+
+    img {
+    border-style: none;
+    }
+
+    /* Forms
+    ========================================================================== */
+
+    /**
+    * 1. Change the font styles in all browsers.
+    * 2. Remove the margin in Firefox and Safari.
+    */
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+    }
+
+    /**
+    * Show the overflow in IE.
+    * 1. Show the overflow in Edge.
+    */
+
+    button,
+    input { /* 1 */
+    overflow: visible;
+    }
+
+    /**
+    * Remove the inheritance of text transform in Edge, Firefox, and IE.
+    * 1. Remove the inheritance of text transform in Firefox.
+    */
+
+    button,
+    select { /* 1 */
+    text-transform: none;
+    }
+
+    /**
+    * Correct the inability to style clickable types in iOS and Safari.
+    */
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+    -webkit-appearance: button;
+    }
+
+    /**
+    * Remove the inner border and padding in Firefox.
+    */
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+    }
+
+    /**
+    * Restore the focus styles unset by the previous rule.
+    */
+
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+    }
+
+    /**
+    * Correct the padding in Firefox.
+    */
+
+    fieldset {
+    padding: 0.35em 0.75em 0.625em;
+    }
+
+    /**
+    * 1. Correct the text wrapping in Edge and IE.
+    * 2. Correct the color inheritance from `fieldset` elements in IE.
+    * 3. Remove the padding so developers are not caught out when they zero out
+    *    `fieldset` elements in all browsers.
+    */
+
+    legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+    }
+
+    /**
+    * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+    */
+
+    progress {
+    vertical-align: baseline;
+    }
+
+    /**
+    * Remove the default vertical scrollbar in IE 10+.
+    */
+
+    textarea {
+    overflow: auto;
+    }
+
+    /**
+    * 1. Add the correct box sizing in IE 10.
+    * 2. Remove the padding in IE 10.
+    */
+
+    [type="checkbox"],
+    [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    }
+
+    /**
+    * Correct the cursor style of increment and decrement buttons in Chrome.
+    */
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+    }
+
+    /**
+    * 1. Correct the odd appearance in Chrome and Safari.
+    * 2. Correct the outline style in Safari.
+    */
+
+    [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+    }
+
+    /**
+    * Remove the inner padding in Chrome and Safari on macOS.
+    */
+
+    [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    }
+
+    /**
+    * 1. Correct the inability to style clickable types in iOS and Safari.
+    * 2. Change font properties to `inherit` in Safari.
+    */
+
+    ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+    }
+
+    /* Interactive
+    ========================================================================== */
+
+    /*
+    * Add the correct display in Edge, IE 10+, and Firefox.
+    */
+
+    details {
+    display: block;
+    }
+
+    /*
+    * Add the correct display in all browsers.
+    */
+
+    summary {
+    display: list-item;
+    }
+
+    /* Misc
+    ========================================================================== */
+
+    /**
+    * Add the correct display in IE 10+.
+    */
+
+    template {
+    display: none;
+    }
+
+    /**
+    * Add the correct display in IE 10.
+    */
+
+    [hidden] {
+    display: none;
+    }
+        </style>
+    </head>
+    <body>
+
+        
+        
+        <nav>
+            <img class="menu-button" src="images/hamburger-menu-icon.svg" alt="burger-menu-icon">
+            <div id="mode">
+                ☑️
+            </div>
+            <a href="https://www.linkedin.com/in/ednilsonbambo/" target="_blank">LinkedIn</a>
+            <a href="">BYU-Idaho</a>
+        </nav>
+
+        
+     
+        <header>
+
+          
+
+            
+            
+            <ul class="menu">
+                <li title="search"><a href="index.html" class="menu-item" id="search">Home</a></li>
+                <li title="plan"><a href="index.html" class="menu-item" id="plan">Discover</a></li>
+                <li title="about"><a href="index.html" class="menu-item" id="about">Directory</a></li>
+                <li title="about"><a href="index.html" class="menu-item" id="about">Join</a></li>
+            </ul>
+            <img id="setubal-pic" src="images/setubal-sm.jpg" alt="picture-of-setubal" style="margin-top:-16px;">
+        </header>
+        
+        <main>
+
+     <h3 id="join-us"><a href="chamber/index.html" id="chamber-a">Join the Commerce</a></h3>
+
+     <section class="chamber-class" id="chamber-events">
+
+        <h3 id="events">Events</h3>
+        <h2>Wednesday Networking</h2>
+        <p>Online Event</p>
+     </section>
+
+     <section class="chamber-class" id="chamber-weather">
+        <h3 id="weather">Weather</h3>
+        <p>40°C</p>
+        <p>Sunny</p>
+     </section>
+
+     <section class="chamber-class" id="chamber-spotlight">
+       <h3 id="spotlight"> Member Spotlights</h3>
+       <h2>Friday Brunch</h2>
+       <p>Networking + food</p>
+     </section>
+        </main>
+        <footer>
+            <p>&copy; Ednilson Bambo, Mozambique</p>
+            <p>WDD 230 Project</p>
+            <p id="lastModified" class="highlight"></p>
+           
+        </footer>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        
+        <!-- <script>
+            var date = new Date();
+            var current_date = date.getFullYear();
+            document.getElementById("year").innerHTML = current_date;
+        </script> -->
+
+    
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/responsive.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    
+    </body>
+</html>
