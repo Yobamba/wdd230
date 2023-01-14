@@ -52,9 +52,10 @@ nav a {
 	color: #fff;
 }
 
+/* uncomment this
 li a.menu-item {
 	display: none;
-}
+} */
 
 li a.open {
 	display: flex;
