@@ -1,6 +1,13 @@
 const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
+const button = document.querySelector('#button');
 const list = document.querySelector('#list');
+
+{/* <h1>📖 Book of Mormon - Top 10</h1>
+<main>
+<label for="favchap">Enter Book and Chapter: </label>
+<input type="text" id="favchap" value="Alma 5">
+<button type="submit" id="button">Add Chapter</button>
+<ul id="list"></ul> */}
 
 
 // button.style.backgroundColor = 'blue';
@@ -8,24 +15,31 @@ const list = document.querySelector('#list');
 
 button.addEventListener('click', function() {
     if (input.value != '') 
-    {  
+    {   
+        const userText = input.value;
         input.textContent = "Let's find out what the chapters are. ";
+        
+        
         const li = document.createElement('li');
-        li.textContent = input.value;
+        const listText = document.createElement('span');
+        const listBtn = document.createElement('button');
 
-        deleteButton.textContent = '❌';
-        list.append(li);
+        li.appendChild(listText);
+        listText.textContent = userText;
+        li.appendChild(listBtn);
+        listBtn.textContent = 'Delete';
+        list.appendChild(li);
+
+        listBtn.addEventListener('click', function() {
+            list.removeChild(li);
+        })
 
 
-        li.append(deleteButton);
-        const deleteButton = document.createElement('button');
 
-        deleteButton.addEventListener('click', function () {
-        list.removeChild(li);
-        input.focus();
-  });
+    
 
     }
 
 });
 
+// ***************************************
