@@ -17,4 +17,8 @@
         margin: auto;
         padding-left: 30px;
     }
+
+    img#hero-pic {
+        width: 400px;
+    }
 }
