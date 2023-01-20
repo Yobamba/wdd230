@@ -257,3 +257,9 @@ iframe {
 #iframe-div {
     margin:auto;
 }
+
+div#temple-text {
+    position: absolute;
+    top:45%;
+    left: 20%;
+}
