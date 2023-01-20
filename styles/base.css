@@ -4,6 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     width: 100%;
+    
    
     
 }
@@ -14,7 +15,7 @@ nav {
     justify-content: right;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+   
     width: 100%;
    
 }
@@ -84,8 +85,15 @@ main {
    
 }
 
+
+
 img#hero-picture {
     width: 1320;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
 }
 
 #my-pic {
@@ -215,7 +223,7 @@ a {
 
 header {
     display: flex;
-    padding: 1rem;
+  
     background-color: lightgrey;
     width: 100%;
    
@@ -238,4 +246,14 @@ footer {
    
    
    
+}
+
+iframe {
+    width: 600px;
+    height: 450px;
+    margin: 0;
+}
+
+#iframe-div {
+    margin:auto;
 }
