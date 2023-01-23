@@ -138,6 +138,10 @@ main {
    
 }
 
+.attraction-pic {
+    width: 100%;
+}
+
 #my-pic {
     border-radius: 5px;
     box-shadow: 5px 5px 15px black;
