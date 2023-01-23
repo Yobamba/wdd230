@@ -146,6 +146,7 @@ main {
     border-color: black;
     border-style: solid;
     border-radius: 10px;
+    grid-row: 1/2;
 }
 
 #local-attractions {
