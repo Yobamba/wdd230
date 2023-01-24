@@ -154,6 +154,11 @@ main {
     border-style: solid;
     border-radius: 10px;
     grid-row: 1/2;
+    height: 50%;
+    top: 5%;
+    bottom: 20%;
+    position: sticky;
+
 }
 
 #local-attractions {
