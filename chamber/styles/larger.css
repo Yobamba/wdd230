@@ -1,0 +1,14 @@
+@media screen and (max-width:400px) {
+    div#temple-text {
+        position: absolute;
+        top:47%;
+    }
+    .attraction-pic:hover {
+        box-shadow: none;
+    }
+
+    main {
+        display: block;
+    }
+}
+

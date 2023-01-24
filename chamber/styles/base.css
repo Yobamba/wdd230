@@ -15,6 +15,8 @@ body {
     margin: 10px;
 }
 
+
+
 #join-us {
     background-color: #001B2E;
     color: white;
@@ -140,6 +142,11 @@ main {
 
 .attraction-pic {
     width: 100%;
+    
+}
+
+.attraction-pic:hover {
+    box-shadow: 0 0 50px #333;
 }
 
 #sidebar {
