@@ -8,6 +8,11 @@ body {
    
     
 }
+
+main {
+    display: grid;
+    justify-content: center;
+}
 nav {
     display: flex;
     flex-direction: row-reverse;
@@ -70,7 +75,7 @@ li a.open {
 
 /* This is where it starts */
 
-main {
+#main-section {
     max-width: 760px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -80,9 +85,6 @@ main {
     align-items: center;
     padding-top:30px;
     padding-bottom: 30px;
-   
-    
-   
 }
 
 
@@ -263,3 +265,20 @@ div#temple-text {
     top:45%;
     left: 20%;
 }
+
+
+
+form {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+#email {
+    width: 300px;
+}
+
+/* #hidden-table {
+    display:none;
+} */

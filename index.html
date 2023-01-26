@@ -416,7 +416,7 @@
 
         <main>
 
-            
+            <section id="main-section">
             <!-- <img src="images/landscape2.2.webp" alt="landscape image" id="landscape"> -->
             
             
@@ -428,7 +428,7 @@
                     <p style="color: black;">Week 01 <a href="holygrail.html">Holy Grail</a></p>
                     <p style="color: black;">Week 02 <a href="https://codepen.io/Ednilson-Bambo/pen/dyjRypg" target="_blank">Responsive</a> | <a href="week02/bom.html" target="_blank">BOM</a></p>
                     <p style="color: black;">Week 03 <a href=""></a> <a href="images/landscape2.2.webp">| Optimized IMG</a> <a href="chamber/discover.html">| Discover</a></p>
-                    <p style="color: black;">Week 04 <a href=""></a> <a href="https://codepen.io/Ednilson-Bambo/pen/MWBGKXg">| Pseudo CSS Codepen</a> <a href="week04/Images/pseudo-exercises.png" target="_blank">| Pseudo Exercises</a></p>
+                    <p style="color: black;">Week 04 <a href=""></a> <a href="https://codepen.io/Ednilson-Bambo/pen/MWBGKXg">| Pseudo CSS Codepen</a> <a href="week04/Images/pseudo-exercises.png" target="_blank">| Pseudo Exercises</a> <a href="week04/tablebuild.html" target="_blank">|  Table Page</a></p>
                     <p style="color: black;">Week 05 <a href=""></a></p>
                     <p style="color: black;">Week 06 <a href=""></a></p>
                     <p style="color: black;">Week 07 <a href=""></a></p>
@@ -446,8 +446,93 @@
             <p style="color:black">Today's Weather</p>
             <p style="color:black"><span>Visitor Count: </span><span class="visits"></span></p>
         </section>
-        </main>
+
+    </section>
+    <div id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114854.1154882011!2d32.540642708372225!3d-25.89608734922888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69723b666da55%3A0x42497f579a6bb442!2sMaputo%2C%20Mo%C3%A7ambique!5e0!3m2!1spt-PT!2spt!4v1674231319149!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+            <form>
+                <div id="form-container">
+                <label for="fname" class="ratevalue">Full Name</label>
+                <input type="text" id="fname" class="ratevalue" name="full-name" required placeholder="Your full name...">
+
+                <label for="email" class="ratevalue">Email</label>
+                <input type="text" id="email" class="ratevalue" name="email" required placeholder="Your email...">
+
+                <label for="page-rating" class="ratevalue">Rate the Page [<span id="rate"></span>]</label>
+                <input type="range" min="1" max="10" list="ten" id="page-rating" name="page-rating" required placeholder="How do you rate this page? ">
+                <div class="ratinglabels">
+                    <span class="ratevalue">1</span>
+                    <span class="ratevalue">2</span>
+                    <span class="ratevalue">3</span>
+                    <span class="ratevalue">4</span>
+                    <span class="ratevalue">5</span>
+                    <span class="ratevalue">6</span>
+                    <span class="ratevalue">7</span>
+                    <span class="ratevalue">8</span>
+                    <span class="ratevalue">9</span>
+                    <span class="ratevalue">10</span>
+             </div>
+
+            
+
+                <label for="username">Username</label>
+                <input type="password" pattern="[a-zA-Z0-9].{5,12}" title="Enter at least five characters and at most 12 characters and that at least one of the characters is not alpha-numeric" id="username" name="username" placeholder="Your username...">
+
+                <label for="name-repeat">Repeat the username</label>
+                <input type="password" id="name-repeat" name="name-repeat" required placeholder="Repeat your username">
+
+                <input type="submit" id="submit" value="submit">
+            </div>
+
+            <div id="hidden-table">
+                <table id="feature">
+                    
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">Form Input</th>
+                        </tr>
+    
+                        <tr>
+                            <th>Field</th>
+                            <th>Value</th>
+                        </tr>
+                        
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td><span id="span-name"></span></td>
+                        </tr>
+    
+                        <tr>
+                            <td>Email</td>
+                            <td><span id="span-email"></span></td>
+                          
+                          
+                        </tr>
+    
+                        <tr>
+                            <td>Rating</td>
+                            <td></td>
+                           
+                            
+                        </tr>
+                    </tbody>
+                    <!-- <caption>Table 1: Account Feature Comparison</caption> -->
+                </table>
+            </div>
+        </div>
+            </form>
+        
+
+        </main>
+        
+
+        
         <footer>
             <p>&copy; Ednilson Bambo, Mozambique</p>
             <p id="lastModified" class="highlight"></p>
@@ -469,6 +554,8 @@
     <script src="scripts/responsive.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/visitorCount.js"></script>
+    <script src="scripts/pattern.js"></script>
+    <script src="scripts/table.js"></script>
     
     </body>
 </html>
