@@ -1,4 +1,4 @@
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
     div#temple-text {
         position: absolute;
         top:47%;
@@ -9,6 +9,15 @@
 
     main {
         display: block;
+    }
+
+    #setubal-pic {
+        width: 100%;
+       
+    }
+
+    nav {
+        width: 100%;
     }
 }
 
