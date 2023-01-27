@@ -8,6 +8,13 @@ body {
     
 }
 
+
+
+#mode {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .chamber-class {
     background-color: #DEC5E3;
     text-align:center;
@@ -325,3 +332,7 @@ footer {
     margin: 0 auto;
 }
 
+#menu-button {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
