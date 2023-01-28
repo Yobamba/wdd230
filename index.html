@@ -428,7 +428,7 @@
                     <p style="color: black;">Week 01 <a href="holygrail.html">Holy Grail</a></p>
                     <p style="color: black;">Week 02 <a href="https://codepen.io/Ednilson-Bambo/pen/dyjRypg" target="_blank">Responsive</a> | <a href="week02/bom.html" target="_blank">BOM</a></p>
                     <p style="color: black;">Week 03 <a href=""></a> <a href="images/landscape2.2.webp">| Optimized IMG</a> <a href="chamber/discover.html">| Discover</a></p>
-                    <p style="color: black;">Week 04 <a href=""></a> <a href="https://codepen.io/Ednilson-Bambo/pen/MWBGKXg">| Pseudo CSS Codepen</a> <a href="week04/Images/pseudo-exercises.png" target="_blank">| Pseudo Exercises</a> <a href="week04/tablebuild.html" target="_blank">|  Table Page</a></p>
+                    <p style="color: black;">Week 04 <a href=""></a> <a href="https://codepen.io/Ednilson-Bambo/pen/MWBGKXg">| Pseudo CSS Codepen</a> <a href="week04/Images/pseudo-exercises.png" target="_blank">| Pseudo Exercises</a> <a href="week04/tablebuild.html" target="_blank">|  Table Page</a><a href="form-start/form-start/index.html" target="_blank">Form</a></p>
                     <p style="color: black;">Week 05 <a href=""></a></p>
                     <p style="color: black;">Week 06 <a href=""></a></p>
                     <p style="color: black;">Week 07 <a href=""></a></p>
@@ -453,15 +453,16 @@
         </div>
 
         
-            <form title="Sign up form">
+            <form title="Sign up form" method="post">
                 <div id="form-container">
-                <label for="fname" class="ratevalue">Full Name</label>
+                    <legend>Your Info</legend>
+                <label class="top" for="fname" class="ratevalue">Full Name</label>
                 <input type="text" id="fname" class="ratevalue" name="full-name" required placeholder="Your full name...">
 
-                <label for="email" class="ratevalue">Email</label>
+                <label class="top"  for="email" class="ratevalue">Email</label>
                 <input type="text" id="email" class="ratevalue" name="email" required placeholder="Your email...">
 
-                <label for="page-rating" class="ratevalue">Rate the Page [<span id="rate"></span>]</label>
+                <label class="top"  for="page-rating" class="ratevalue">Rate the Page [<span id="rate"></span>]</label>
                 <input type="range" min="1" max="10" list="ten" id="page-rating" name="page-rating" required placeholder="How do you rate this page? ">
                 <div class="ratinglabels">
                     <span class="ratevalue">1</span>
@@ -478,15 +479,18 @@
 
             
 
-                <label for="username">Username</label>
+                <label class="top"  for="username">Username</label>
                 <input type="password" pattern="[a-zA-Z0-9].{5,12}" title="Enter at least five characters and at most 12 characters and that at least one of the characters is not alpha-numeric" id="username" name="username" placeholder="Your username...">
 
-                <label for="name-repeat">Repeat the username</label>
+                <label class="top"  for="name-repeat">Repeat the username</label>
                 <input type="password" id="name-repeat" name="name-repeat" required placeholder="Repeat your username">
 
-                <input type="submit" id="submit" value="submit">
+                <input type="submit" id="submit" value="Sign Me Up">
             </div>
 
+            
+        </div>
+            </form>
             <div id="hidden-table">
                 <table id="feature">
                     
@@ -525,9 +529,6 @@
                     <!-- <caption>Table 1: Account Feature Comparison</caption> -->
                 </table>
             </div>
-        </div>
-            </form>
-        
 
         </main>
         

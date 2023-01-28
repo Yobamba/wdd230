@@ -9,6 +9,12 @@ body {
     
 }
 
+:root {
+    --primary-color: #38384d;
+    --secondary-color: lightgrey;
+    --accent-3-color: black;
+}
+
 main {
     display: grid;
     justify-content: center;
@@ -16,7 +22,7 @@ main {
 nav {
     display: flex;
     flex-direction: row-reverse;
-    background-color: #38384d;
+    background-color: var(--primary-color);
     justify-content: right;
     align-items: center;
     gap: 1rem;
@@ -220,18 +226,18 @@ section {
 
 
 a {
-    color:black;
+    color:var(--accent-3-color);
 }
 
 header {
     display: flex;
   
-    background-color: lightgrey;
+    background-color: var(--secondary-color);
     width: 100%;
    
    
     }
-    
+
   
 
 ul {
@@ -269,15 +275,42 @@ div#temple-text {
 
 
 form {
-    width: 200px;
+    width: 308px;
+    padding: .8rem;
     margin: 0 auto;
     margin-bottom: 30px;
     margin-top: 25px;
+    border: #38384d 1px solid;
 }
 
-#email {
-    width: 300px;
+legend {
+    color: red;
 }
+input {
+    width: 300px;
+    
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+#submit {
+    width: 308px;
+    margin: 20px 10px 10px 0;
+    color: var(--accent-3-color);
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: grey;
+    font-size: .8rem;
+}
+
+form label.top input {
+    width: 100%;
+}
+
+
 
 /* #hidden-table {
     display:none;

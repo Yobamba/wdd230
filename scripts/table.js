@@ -8,5 +8,5 @@ startButton.addEventListener("submit", function FillTable()
 
     let nameSpace = document.querySelector("#span-name");
 
-    nameSpace.innerHTML = nameVar;
+    nameSpace.innerHTML = nameVar.value;
 })
