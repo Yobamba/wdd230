@@ -1,12 +1,12 @@
 const startButton = document.querySelector("#submit");
 
+var nameVar = form.elements["fname"].value;
+var nameSpace = document.querySelector("#span-name");
 
 
-startButton.addEventListener("submit", function FillTable() 
+startButton.addEventListener("submit", function FillTable(e) 
 {
-    let nameVar = document.querySelector("#fname");
 
-    let nameSpace = document.querySelector("#span-name");
-
-    nameSpace.innerHTML = nameVar.value;
+    e.preventDefault()
+    nameSpace.innerHTML = nameVar;
 })

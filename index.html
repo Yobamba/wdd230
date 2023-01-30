@@ -455,15 +455,15 @@
         
             <form title="Sign up form" method="post">
                 <div id="form-container">
-                    <legend>Your Info</legend>
+                    <legend><strong>Your Info</strong></legend>
                 <label class="top" for="fname" class="ratevalue">Full Name</label>
                 <input type="text" id="fname" class="ratevalue" name="full-name" required placeholder="Your full name...">
 
                 <label class="top"  for="email" class="ratevalue">Email</label>
-                <input type="text" id="email" class="ratevalue" name="email" required placeholder="Your email...">
+                <input type="email" id="email" class="ratevalue" name="email" required placeholder="Your email...">
 
                 <label class="top"  for="page-rating" class="ratevalue">Rate the Page [<span id="rate"></span>]</label>
-                <input type="range" min="1" max="10" list="ten" id="page-rating" name="page-rating" required placeholder="How do you rate this page? ">
+                <input type="range" min="1" max="10" value="5" list="ratevalue" id="page-rating" name="page-rating" oninput="document.getElementById('rate').innerHTML = this.value" required placeholder="How do you rate this page? ">
                 <div class="ratinglabels">
                     <span class="ratevalue">1</span>
                     <span class="ratevalue">2</span>
