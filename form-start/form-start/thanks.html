@@ -1,52 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Setubal City's Chamber of Commerce</title>
+        <meta name="description" content="My name is Ednilson Bambo. This is a page for my WDD230 Assignment. ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ednilson">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta property="og:title" content="WDD 230 - Portal - Ednilson Bambo">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dailysabah.com%2Flife%2Ftravel%2Fmagical-secluded-paradise-of-portugals-setubal-peninsula&psig=AOvVaw0sTA1I7m3-EEL3Ro13rCUf&ust=1673632725277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCmpPLNwvwCFQAAAAAdAAAAABAE">
+        <meta property="og:url" content="https://yobamba.github.io/wdd230/">
 
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"
+        crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" 
+        rel="stylesheet"> 
+        <link rel="icon" href="favicon.ico">
+       
 
-    <!-- This start file was build by Paul Cheney  -->
-    <title>HTML5 Start Site by Paul Cheney</title>
+       
+    </head>
+    <body>
 
-    <meta name="description" content="Fill Me In">
-    <meta name="author" content="John Doe">
+        
+        
+        <nav>
+            <img id="menu-button" src="images/hamburger-menu-icon.svg" alt="burger-menu-icon">
+            <div id="mode">
+                <p>Mode</p>
+            </div>
+            
+            
+        </nav>
 
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/base.css" rel="stylesheet">
-    <link href="styles/larger.css" rel="stylesheet">
+        
+     
+        <header>
 
-</head>
+          
 
-<body>
-    <header>
-        <h1>Course Proposal</h1>
-        <h2>Designing Web Forms</h2>
-    </header>
+            
+            
+            <ul class="menu">
+                <li title="search"><a href="index.html" class="menu-item" id="search">Home</a></li>
+                <li title="plan"><a href="" class="menu-item">BYU-Idaho</a></li>
+                <li title="about"><a href="https://www.linkedin.com/in/ednilsonbambo/" target="_blank" class="menu-item">LinkedIn</a></li>
+                <li title="about"><a href="index.html" class="menu-item" id="about">Join</a></li>
+            </ul>
+            <img id="setubal-pic" src="images/setubal-sm.jpg" alt="picture-of-setubal">
+        </header>
+        
+        <main>
+         <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>My Information</legend>
+                <label>First Name* <input type="text" name="fname" required placeholder="Your first name..."></input></label>
+                <label>Last Name* <input type="text" name="lname" required placeholder="Your last name..."></input></label>
+                <label>Business Position Title <input type="text" name="position" placeholder="Your business position..."></input></label>
+                <label>Email* <input type="email" name="email" required placeholder="your@email.com..."></input></label>
+                <label>Phone Number* <input type="tel" name="phone" required placeholder="9437398444..."></input></label>
+                <label>Business Name / Title* <input type="text" name="business" required placeholder="Your business name..."></input></label>
+            </fieldset>
 
-    <nav class="clearfix">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li class="active"><a href="#">Propose</a></li>
-            <li><a href="#">Winners</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+                <fieldset>
+                    <legend>Membership Information</legend>
+                    <label>Membership Level<select type="level" name="level">
 
+                        <option>Select &#9662</option>
+                        <option>NP Membership is for non profit organizations and there is no fee.</option>
+                        <option>Bronze Membership</option>
+                        <option>Silver Membership</option>
+                        <option>Gold Membership</option>
+                    <label>About your business<input type="text" name="about" placeholder="Describe your business "></input></label>
+                </select></label>
+                    <label>Loaded Date<input type="datetime-local" name="date"></input></label>
+                    
+            </fieldset>
+        
+            <input type="submit" value="Join the Chamber"></input>
+    
 
-    <main>
-        <h1>Course Proposal Application</h1>
-        <p>Thanks for applying to create a course for our online library. We will get back to you
-            within a week with a response.</p>
-
-
-
-    </main>
-
-    <footer>
-        &copy; &bull; Paul Cheney &bull; 123-555-6789
-    </footer>
-    <script src="scripts/scripts.js"></script>
-</body>
-
+         </form>
+        </main>
+        <footer>
+            <p>&copy; Ednilson Bambo, Mozambique</p>
+            <p>WDD 230 Project</p>
+            <p id="lastModified" class="highlight"></p>
+           
+        </footer>
+       
+    
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/responsive.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    
+    </body>
 </html>

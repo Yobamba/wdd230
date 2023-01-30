@@ -292,7 +292,9 @@ section {
   
 }
 
-
+#empty-div {
+    height: 100px;
+}
 
 
 a {

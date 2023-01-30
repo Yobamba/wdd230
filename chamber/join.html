@@ -3,16 +3,16 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html lang="en">
+<html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Setubal City's Chamber of Commerce</title>
-        <meta name="description" content="My name is Ednilson Bambo. This is a page for my WDD230 Assignment. ">
+        <title>Join Setubal's Chamber of Commerce Today. Enjoy all the benefits of membership</title>
+        <meta name="description" content="This is Setubal's Chamber of Commerce's Join page. This is your opportunity to join our community">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Ednilson">
+        <meta name="author" content="Ednilson Bambo">
 
-        <meta property="og:title" content="WDD 230 - Portal - Ednilson Bambo">
+        <meta property="og:title" content="Join Setubal's Chamber of Commerce Today">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dailysabah.com%2Flife%2Ftravel%2Fmagical-secluded-paradise-of-portugals-setubal-peninsula&psig=AOvVaw0sTA1I7m3-EEL3Ro13rCUf&ust=1673632725277000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCmpPLNwvwCFQAAAAAdAAAAABAE">
         <meta property="og:url" content="https://yobamba.github.io/wdd230/">
@@ -60,7 +60,36 @@
         </header>
         
         <main>
-         
+         <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>My Information</legend>
+                <label>First Name* <input type="text" name="fname" required placeholder="Your first name..."></input></label>
+                <label>Last Name* <input type="text" name="lname" required placeholder="Your last name..."></input></label>
+                <label>Business Position Title <input type="text" name="position" placeholder="Your business position..."></input></label>
+                <label>Email* <input type="email" name="email" required placeholder="your@email.com..."></input></label>
+                <label>Phone Number* <input type="tel" name="phone" required placeholder="9437398444..."></input></label>
+                <label>Business Name / Title* <input type="text" name="business" required placeholder="Your business name..."></input></label>
+            </fieldset>
+
+                <fieldset>
+                    <legend>Membership Information</legend>
+                    <label>Membership Level<select type="level" name="level">
+
+                        <option>Select &#9662</option>
+                        <option>NP Membership is for non profit organizations and there is no fee.</option>
+                        <option>Bronze Membership</option>
+                        <option>Silver Membership</option>
+                        <option>Gold Membership</option>
+                    <label>About your business<input type="text" name="about" placeholder="Describe your business "></input></label>
+                </select></label>
+                    <label>Loaded Date<input type="datetime-local" name="date"></input></label>
+                    
+            </fieldset>
+        
+            <input type="submit" value="Join the Chamber"></input>
+    
+
+         </form>
         </main>
         <footer>
             <p>&copy; Ednilson Bambo, Mozambique</p>
@@ -68,17 +97,7 @@
             <p id="lastModified" class="highlight"></p>
            
         </footer>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        
-        <!-- <script>
-            var date = new Date();
-            var current_date = date.getFullYear();
-            document.getElementById("year").innerHTML = current_date;
-        </script> -->
-
+       
     
     <script src="scripts/getDates.js"></script>
     <script src="scripts/responsive.js"></script>
