@@ -1,0 +1,18 @@
+{
+	"familyName" : "Silva",
+	"moveInDate" : "09/17/2019",
+	"numberOfPeopleInFamily" : 2,
+	"visitedByBishop" : true,
+	"members" : [
+	{
+	"name" : "Adam",
+	"gender" :"male",
+	"birthDate" : "04/25/1977"
+	},
+	{"name" : "Maddie",
+	"gender" : "female",
+	"birthdate" : "09/03/1979"
+	}
+	]
+	
+}
