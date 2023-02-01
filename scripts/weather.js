@@ -1,8 +1,11 @@
-const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("img");
-const caption = document.querySelector("figcaption");
+const currentTemp = document.querySelector("#weather");
+const weatherIcon = document.getElementById("icon");
+const description = document.querySelector("#description");
 
-const url = "https://api.openweathermap.org/data/2.5/weather?q=Trier&units=imperial&appid=7b025b66c02f655483fe4c3c0263cb04";
+
+
+
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Maputo&units=imperial&appid=7b025b66c02f655483fe4c3c0263cb04";
 
 async function apiFetch() {
     try {
@@ -26,13 +29,16 @@ function displayResults(info) {
     let iconUrl = info.weather[0].icon;
     let iconAlt = info.weather[0].description;
 
-    caption.textContent = iconAlt;
+    // caption.textContent = iconAlt;
 
     let fullIconUrl = `http://openweathermap.org/img/wn/${iconUrl}@2x.png`;
     weatherIcon.setAttribute('src', fullIconUrl);
     weatherIcon.setAttribute('alt', iconAlt);
+    weatherIcon.setAttribute('style', "margin-left:95px");
+
+    description.textContent = ` | ${iconAlt}`;
     console.log("Testing");
-    console.log(iconUrl);
+    // console.log(iconUrl);
     currentTemp.innerHTML = weatherNumber;
 }
 
