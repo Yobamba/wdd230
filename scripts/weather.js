@@ -12,7 +12,7 @@ async function apiFetch() {
         let response = await fetch(url);
         if (response.ok) {
             let data = await response.json();
-            console.log(data);
+            // console.log(data);
             displayResults(data)
         } else {
             throw Error(await response.text());
@@ -37,7 +37,7 @@ function displayResults(info) {
     weatherIcon.setAttribute('style', "margin-left:95px");
 
     description.textContent = ` | ${iconAlt}`;
-    console.log("Testing");
+    // console.log("Testing");
     // console.log(iconUrl);
     currentTemp.innerHTML = weatherNumber;
 }
