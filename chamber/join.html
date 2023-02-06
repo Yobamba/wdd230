@@ -78,14 +78,14 @@
                         <select name="level">
 
                         <option>Select &#9662;</option>
-                        <option>NP Membership is for non profit organizations and there is no fee.</option>
+                        <option>NP Membership (for non profit organizations and there is no fee.)</option>
                         <option>Bronze Membership</option>
                         <option>Silver Membership</option>
                         <option>Gold Membership</option>
                     
                 </select></label>
-                <label>About your business<input type="text" name="about" placeholder="Describe your business "></label>
-                    <label>Loaded Date<input type="datetime-local" name="date"></label>
+                <label>About your business<textarea name="about"></textarea></label>
+                    <label id="hidden-label">Loaded Date: <span id="hidden-date"></span></label>
 
                  
                     
@@ -96,6 +96,49 @@
 
          </form>
         </div>
+        <div id="member-table-div">
+        <table>
+            <tr>
+                <th>Membership Level</th>
+                <th>Cost</th>
+                <th>Benefits</th>
+            </tr>
+
+            <tr>
+                <td>NP Membership</td>
+                <td>Free</td>
+                <td>
+                    <ul>
+                        <li>Training</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Bronze Membership</td>
+                <td>$50</td>
+                <td>
+                    <ul>
+                        <li>Training</li>
+                        <li>Event Discounts</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gold Membership</td>
+                <td>$100</td>
+                <td>
+                    <ul>
+                    <li>Training</li>
+                    <li>Spotlight Position on the Home Page</li>
+                    <li>Event Discounts</li>
+                    <li>Access to Special Events</li>
+                </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
         </main>
         <footer>
             <p>&copy; Ednilson Bambo, Mozambique</p>

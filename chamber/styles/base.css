@@ -55,8 +55,30 @@ form legend {
    
 }
 
+#member-table-div {
+    margin-left: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
 #chamber-a {
     color: white;
+}
+
+#hidden-label {
+    display: none;
 }
 
 #setubal-pic {
