@@ -11,22 +11,61 @@ body {
 
 
 
-.top {
-    padding-top: 10px;
+form {
+    background-color: ;
+    border: 10px;
 }
+
+form label.top {
+    padding-top: 1rem;
+    display: block;
+   
+    
+    
+    
+
+    
+}
+
+form label {
+    border-radius: 10px;
+}
+
+form label.top input, form label.top textarea {
+    display: block;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
+
+
 
 form fieldset {
     margin: 2rem 0;
     border: #72739f 1px thin;
+    
     border-radius: 10px;
     padding: 30px;
 }
 
 form legend {
-    padding: 0 10px;
-    margin: 0 10px;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    color: #001B2E;
 }
 
+form input#joinBtn {
+    border: none;
+    border-radius: 1rem;
+    background-color: #9c2c13;
+    color: white;
+    padding: .75rem 1.5rem;
+   
+    max-width: 20rem;
+}
 
 
 #mode {

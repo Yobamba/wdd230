@@ -29,6 +29,15 @@
         width: 275px;
     }
 
+    form label.top input {
+        padding: .75rem;
+        width: 100%;
+    }
+
+    form input#joinBtn {
+        width: 100%;
+    }
+
     
 }
 
