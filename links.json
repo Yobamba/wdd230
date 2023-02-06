@@ -1,37 +1,80 @@
 
 {
-    "weeks": [
+    "Week01": [
                 {
-                    "week":"week01",
-                    "links": ["week01/holygrail.html", "week01/chamber-site-plan.html"],
-                    "name":["Holy Grail", "Chamber Site Plan"]
+                    "link": "week01/holygrail.html",
+                    "name":"Holy Grail"
                     
                 },
-
+                
                 {
-                    "week":"week02",
-                    "links":["https://codepen.io/Ednilson-Bambo/pen/dyjRypg", "week02/bom.html", "week02/design.html", "week02/dom.html"],
-                    "name":["Responsive Codepen", "BOM", "Design", "DOM"]
-                },
-
-                {
-                    "week":"week03",
-                    "links":["images/landscape2.2.webp", "week03/chamber/discover.html"],
-                    "name":["Optimized IMG", "Discover"]
-                },
-
-                {
-                    "week":"week04",
-                    "links":["https://codepen.io/Ednilson-Bambo/pen/MWBGKXg", "week04/Images/pseudo-exercises.png", "week04/tablebuild.html"],
-                    "name":["Psudo CSS Codepen", "Pseudo Exercise IMGs", "Tables"]
-                },
-
-                {
-                    "week":"week05",
-                    "links":["week05/prophets.html", "week05/weather.html"],
-                    "name":["Pseudo CSS Elements", "Prophets by Fetch", "Weather API"]
+                    "link": "week01/chamber-site-plan.html",
+                    "name":"Chamber Site Plan"
                 }
+            ],
+
+    "Week02": [
+                {
+                    "link":"https://codepen.io/Ednilson-Bambo/pen/dyjRypg",
+                    "name":"Responsive Codepen"
+                }, 
+
+                {
+                    "link":"week02/bom.html",
+                    "name":"BOM"
+                },
+
+                {
+                    "link":"week02/design.html",
+                    "name":"Design"
+                },
+
+                {
+                    "link":"week02/dom.html",
+                    "name":"DOM"
+                }
+            ],
+    "Week03": [
+                {
+                    "link":"images/landscape2.2.webp",
+                    "name":"Optimized IMG"
+                },
+
+                {
+                    "link":"chamber/discover.html",
+                    "name":"Discover"
+                }
+            ],
+
+    "Week04": [
+                {
+                    "link":"https://codepen.io/Ednilson-Bambo/pen/MWBGKXg",
+                    "name":"Psudo CSS Codepen"
+                },
+
+                {
+                    "link":"week04/Images/pseudo-exercises.png",
+                    "name":"Pseudo Exercise IMGs"
+                }, 
+
+                {
+                    "link":"week04/tablebuild.html",
+                    "name":"Tables"
+                }
+            ],
+
+    "Week05": [
+                {
+                    "link":"week05/prophets.html",
+                    "name":"Prophets by Fetch"
+                },
+
+                {
+                    "link":"week05/weather.html",
+                    "name":"Weather API"
+                }
+            ]
 
 
-    ]
+    
 }

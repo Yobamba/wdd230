@@ -14,22 +14,48 @@ async function apiFetch2() {
             let i = 1;
             
             
-            weeklyLinks = data.weeks;
+            
 
-            console.log(weeklyLinks);
+            let weekKeys = Object.keys(data);
+            console.log(weekKeys);
+
+            populateLinks(data, weekKeys);
             
             
             // console.log(weeklyLinks);
             // populateLinks(weeklyLinks);
             // // console.log(weeklyLinks.keys());
             // console.log(weeklyLinks);
-            weeklyLinks.forEach(link => {
-                populateLinks(link.week, link.links, link.name );
+            // weeklyLinks.forEach(link => {
+            //     console.log(link.week);
+            //     console.log(link.links);
+            //     console.log(link.name);
+
+                // let weekHolder = link.week;
+                // let linkHolder = link.links;
+                // linkHolder.forEach(heldLink => {
+                //     let testLi = document.createElement('li');
+                //     let testLink = document.createElement('a');
+                //     let nameHolder = link.name;
+                //     testLink.setAttribute('src', heldLink);
+                //     console.log(testLink);
+                //     testLink.setAttribute('alt', nameHolder);
+                //     testLi.textContent = link;
+                //     weekUList.append(testLi);
+
+                // });
+                
+
+                
+
+                
+                
+                // populateLinks(link.week, link.links, link.name );
                 // console.log(link.week);
                 // console.log(link.links);
                 // console.log(link.name);
                  
-            });
+            // });
            
             // setHref(weeklyLinks);
 
@@ -51,12 +77,27 @@ apiFetch2();
 
 
 
-function populateLinks(weeks, links, names) {
+function populateLinks(fullData, KeyWeeks) {
 
-    let newli = document.createElement('li');
+    KeyWeeks.forEach(week => {
+        let newli = document.createElement('li');
+        newli.textContent = `${week}: `;
+        fullData[week].forEach(element => {
+            let newA = document.createElement('a');
+            newA.setAttribute('href', element.link);
+            newA.setAttribute('alt', element.name);
+            newA.setAttribute('target', "_blank");
+            newA.textContent = ` ${element.name} |`;
+            newli.appendChild(newA);
+            weekUList.appendChild(newli);
+        });
+        
+    });
+
+    
    
         // create an a element
-    let newA = document.createElement('a');
+    
         // set the attributes
     links.forEach(link => {
         newA.setAttribute('href', link);

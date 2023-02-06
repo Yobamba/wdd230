@@ -316,3 +316,7 @@ form label.top input {
 /* #hidden-table {
     display:none;
 } */
+
+#hidden-table {
+    visibility: hidden;
+}
