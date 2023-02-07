@@ -1,0 +1,86 @@
+{
+    "Company1": [
+                    {
+                        "name":"Dansung",
+                        "address":"Rua 33 Joao Sequeira Braga",
+                        "phoneNumber":"4908374294",
+                        "website":"www.dansung.com",
+                        "iconName":"Dansung Logo",
+                        "membershipLevel":"Gold",
+                        "yearFounded":"2013"
+                    }
+                ],
+
+    "Company2": [
+                    {
+                        "name":"Tomato",
+                        "address":"Praceta 94  Lionel Messi Braga",
+                        "phoneNumber":"103019439",
+                        "website":"www.tomato.com",
+                        "iconName":"Tomato Logo",
+                        "membershipLevel":"Gold",
+                        "yearFounded":"2006"
+                    }
+                ],
+    "Company3": [
+                    {
+                        "name":"Silver",
+                        "address":"Avenida Gabriel Afonso",
+                        "phoneNumber":"709077458",
+                        "website":"www.silver.com",
+                        "iconName":"Silver Logo",
+                        "membershipLevel":"Bronze",
+                        "yearFounded":"2003"
+                    }
+                ],
+
+    "Company4": [
+                    {
+                        "name":"Doodle",
+                        "address":"Rua dos Feijoes Bonitos",
+                        "phoneNumber":"4324295749",
+                        "website":"www.doodle.com",
+                        "iconName":"Doodle Logo",
+                        "membershipLevel":"NP",
+                        "yearFounded":"2000"
+                    }
+                ],
+    "Company5": [
+                    {
+                        "name":"Sunshine",
+                        "address":"Rua do Brilho Amarelo",
+                        "phoneNumber":"567483423",
+                        "website":"www.sunshine.com",
+                        "iconName":"Sunshine Logo",
+                        "membershipLevel":"Bronze",
+                        "yearFounded":"2007"
+                        
+                    }
+                ],
+
+    "Company6": [
+                    {
+                        "name":"Studio3",
+                        "address":"Rua das Batidas Boas",
+                        "phoneNumber":"3639774532",
+                        "website":"www.studio3.com",
+                        "iconName":"Studio3 Logo",
+                        "membershipLevel":"Gold",
+                        "yearFounded":"2019"
+                    }
+                ],
+
+    "Company7": [
+                    {
+                        "name":"WithU",
+                        "address":"Avenida Contigo",
+                        "phoneNumber":"123983244",
+                        "website":"www.withu.com",
+                        "iconName":"WithU Logo",
+                        "membershipLevel":"Gold",
+                        "yearFounded":"2020"
+                    }
+                ]
+
+
+}
