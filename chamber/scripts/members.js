@@ -6,22 +6,21 @@ let gridBtn = document.querySelector('#gridBtn');
 listBtn.addEventListener('click', () => {
     targetDiv.classList.remove('grid');
     targetDiv.classList.add('flex');
-    console.log('listen');
+   
 })
 
 gridBtn.addEventListener('click', () => {
     targetDiv.classList.remove('flex');
     targetDiv.classList.add('grid');
-    console.log('listen grid');
+    
 })
 
 async function fetchData(url) {
     let response = await fetch(url);
     let data = await response.json();
-    console.log(data);
+   
     let companyKeys = Object.keys(data);
-    console.log(companyKeys);
-    console.log('hello world');
+  
 
     buldContent(data, companyKeys);
 
