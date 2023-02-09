@@ -446,4 +446,6 @@ div#mode p {
 
 #layoutBtns {
     margin: 0 auto;
+    grid-row: 1/2;
+    grid-column: 1/4;
 }
