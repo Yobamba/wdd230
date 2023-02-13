@@ -66,9 +66,16 @@ function getJokes(rawJokes) {
         let jokeP = document.querySelector("#jokeP");
        
         jokeP.textContent = jokeArray[a];
-        jokeDiv.setAttribute('style', 'width:400px');       
+        jokeDiv.setAttribute('style', 'width:400px');
+
+        
+
+       
+        // document.querySelector('#jokeP').textContent = jokeP;
+      
+        
     });
-  
+    // showJokes(jokeArray);
 }
 
 
