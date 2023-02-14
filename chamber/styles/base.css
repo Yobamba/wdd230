@@ -198,21 +198,21 @@ nav {
     color: white;
     margin-top: 0px;
     border-radius: 10px 10px 0 0;
-    grid-column: 1/4;
+    grid-column: 1/5;
     grid-row: 1/2;
 }
 
 #temp-hoy {
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 #next3 {
-    grid-column: 2/4;
+    grid-column: 2/5;
 }
 
 #icon {
-    grid-row: 4/5;
+    grid-row: 5/6;
     grid-column: 1/2;
 }
 
@@ -226,6 +226,10 @@ section {
     text-align: center;
 }
 
+#description-p {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
 
 main {
     max-width: 760px;
@@ -335,8 +339,8 @@ li a.open {
 
 #chamber-weather {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 #learning-activities {
@@ -380,7 +384,7 @@ li a.open {
 }
 
 section {
-    max-width: 320px;
+    max-width: 420px;
 }
 
 
