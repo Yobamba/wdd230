@@ -49,6 +49,7 @@ function displayResults(info, forcastInfo) {
     let day1Icon = document.createElement('img');
     day1Icon.setAttribute('src', fullDay1IconUrl);
     day1Icon.setAttribute('alt', day1DescriptTxt); 
+    day1Icon.setAttribute('style', 'grid-column:2/3; grid-row: 5/6');
 
     let day2 = forcastArray[1];
     let day2Temp = day2.main.temp;
@@ -66,6 +67,7 @@ function displayResults(info, forcastInfo) {
     let day2Icon = document.createElement('img');
     day2Icon.setAttribute('src', fullDay2IconUrl);
     day2Icon.setAttribute('alt', day2DescriptTxt); 
+    day2Icon.setAttribute('style', 'grid-column:3/4; grid-row: 5/6');
     
 
     let day3 = forcastArray[2];
