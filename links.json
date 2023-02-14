@@ -73,6 +73,13 @@
                     "link":"week05/weather.html",
                     "name":"Weather API"
                 }
+            ],
+
+    "Week06": [
+                {
+                    "link":"chamber/directory.html",
+                    "name":"Directory-Page"
+                }
             ]
 
 

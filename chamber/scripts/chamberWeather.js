@@ -7,11 +7,16 @@ const description = document.querySelector("#description");
 
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Setubal&units=imperial&appid=7b025b66c02f655483fe4c3c0263cb04";
 
+const forcastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=38.5256&lon=-8.7396&cnt=3&appid=7b025b66c02f655483fe4c3c0263cb04&units=imperial";
+
 async function apiFetch() {
     try {
         let response = await fetch(url);
-        if (response.ok) {
+        let forcastResponse = await fetch(forcastUrl);
+        if (response.ok && forcastResponse.ok) {
             let data = await response.json();
+            let forcastData = await forcastResponse.json();
+            console.log(forcastData);
             // console.log(data);
             displayResults(data)
         } else {
