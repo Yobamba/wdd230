@@ -17,8 +17,7 @@ async function apiFetch() {
         if (response.ok && forcastResponse.ok) {
             let data = await response.json();
             let forcastData = await forcastResponse.json();
-            console.log(forcastData);
-            // console.log(data);
+        
             displayResults(data, forcastData)
         } else {
             throw Error(await response.text());
@@ -32,7 +31,7 @@ async function apiFetch() {
 function displayResults(info, forcastInfo) {
 
     var forcastArray = forcastInfo.list;
-    console.log(forcastArray);
+ 
     let day1 = forcastArray[0];
     let day1Temp = day1.main.temp;
     let day1TempTxt = document.createElement('p');
@@ -44,7 +43,7 @@ function displayResults(info, forcastInfo) {
     day1DescriptTxt.innerHTML = day1Descript;
     day1DescriptTxt.setAttribute('style', 'grid-column:2/3; grid-row:4/5');
     let day1IconUrl = day1.weather[0].icon;
-    console.log(day1IconUrl);
+  
     let fullDay1IconUrl = `http://openweathermap.org/img/wn/${day1IconUrl}@2x.png`
     let day1Icon = document.createElement('img');
     day1Icon.setAttribute('src', fullDay1IconUrl);
@@ -62,7 +61,7 @@ function displayResults(info, forcastInfo) {
     day2DescriptTxt.innerHTML = day2Descript;
     day2DescriptTxt.setAttribute('style', 'grid-column:3/4; grid-row:4/5');
     let day2IconUrl = day2.weather[0].icon;
-    console.log(day2IconUrl);
+   
     let fullDay2IconUrl = `http://openweathermap.org/img/wn/${day2IconUrl}@2x.png`
     let day2Icon = document.createElement('img');
     day2Icon.setAttribute('src', fullDay2IconUrl);
@@ -81,7 +80,7 @@ function displayResults(info, forcastInfo) {
     day3DescriptTxt.innerHTML = day3Descript;
     day3DescriptTxt.setAttribute('style', 'grid-column:4/5; grid-row:4/5');
     let day3IconUrl = day3.weather[0].icon;
-    console.log(day3IconUrl);
+   
     let fullDay3IconUrl = `http://openweathermap.org/img/wn/${day3IconUrl}@2x.png`
     let day3Icon = document.createElement('img');
     day3Icon.setAttribute('src', fullDay3IconUrl);
@@ -106,7 +105,6 @@ function displayResults(info, forcastInfo) {
    
 
 
-    console.log(day1);
    
     let weatherNumber = `${info.main.temp}&deg;F`;
 
@@ -121,8 +119,7 @@ function displayResults(info, forcastInfo) {
    
 
     description.textContent = ` ${iconAlt}`;
-    // console.log("Testing");
-    // console.log(iconUrl);
+   
     currentTemp.innerHTML = weatherNumber;
 }
 
