@@ -1,5 +1,5 @@
 const currentTemp = document.querySelector("#weather-span");
-const weatherIcon = document.getElementById("icon");
+const weatherIcon = document.getElementById("#icon");
 const description = document.querySelector("#description");
 const forcastTarget = document.querySelector("#chamber-weather"); // This targets the weather section
 
@@ -114,8 +114,13 @@ function displayResults(info, forcastInfo) {
     // caption.textContent = iconAlt;
 
     let fullIconUrl = `http://openweathermap.org/img/wn/${iconUrl}@2x.png`;
-    weatherIcon.setAttribute('src', fullIconUrl);
-    weatherIcon.setAttribute('alt', iconAlt);
+    let todayIcon = document.createElement('img');
+    
+    todayIcon.setAttribute('src', fullIconUrl);
+    todayIcon.setAttribute('alt', iconAlt);
+    todayIcon.setAttribute('style', 'grid-column:1/2');
+    todayIcon.setAttribute('style', 'grid-row:5/6');
+    forcastTarget.appendChild(todayIcon);
    
 
     description.textContent = ` ${iconAlt}`;
