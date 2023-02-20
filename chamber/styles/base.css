@@ -478,3 +478,9 @@ div#mode p {
     grid-row: 1/2;
     grid-column: 1/4;
 }
+
+#double-section {
+    display: grid;
+    grid-template-rows: 1fr 210px 230px;
+    
+}
