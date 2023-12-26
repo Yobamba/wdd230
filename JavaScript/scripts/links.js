@@ -88,30 +88,30 @@ function populateLinks(fullData, KeyWeeks) {
         }); 
     });
    
-        // create an a element
+    //     // create an a element
     
-        // set the attributes
-    links.forEach(link => {
-        newA.setAttribute('href', link);
-        newA.setAttribute('target', '_blank');
+    //     // set the attributes
+    // links.forEach(link => {
+    //     newA.setAttribute('href', link);
+    //     newA.setAttribute('target', '_blank');
 
-            // Set the link text
-        let nodeText = document.createTextNode(names);
+    //         // Set the link text
+    //     let nodeText = document.createTextNode(names);
         
 
-        newA.setAttribute('title', 'link');
+      
 
-            // put the text inside the link
-        newA.appendChild(nodeText);
-        console.log(newA);
-            // put the link inside the 
-            // newP.appendChild(newA);
+    //         // put the text inside the link
+    //     newA.appendChild(nodeText);
+    //     console.log(newA);
+    //         // put the link inside the 
+    //         // newP.appendChild(newA);
     
-            //test this 
-        newli.innerHTML = `${weeks}: <a href="${newA}" target="_blank">${names}</a>|`;
-        console.log(newli);
-        weekUList.appendChild(newli);
-    });
+    //         //test this 
+    //     newli.innerHTML = `${weeks}: <a href="${newA}" target="_blank">${names}</a>|`;
+    //     console.log(newli);
+    //     weekUList.appendChild(newli);
+    // });
 
     // for (let i = 0; i < link.length;i++) {
         
