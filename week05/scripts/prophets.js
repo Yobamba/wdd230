@@ -37,11 +37,11 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
         
-
+        card.appendChild(portrait);
         card.appendChild(fullName);
         card.appendChild(bDay);
         card.appendChild(bPlace);
-        card.appendChild(portrait);
+        
         card.setAttribute('style', 'background-color:brown');
 
         cards.appendChild(card);

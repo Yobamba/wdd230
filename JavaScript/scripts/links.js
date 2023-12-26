@@ -2,7 +2,6 @@ const baseUrl = "https://yobamba.github.io/wdd230/";
 var weekUList = document.querySelector("#weeks");
 const linkList = document.querySelectorAll('.link-list');
 
-
 const localUrl = "links.json";
 
 async function apiFetch2() {
@@ -44,11 +43,7 @@ async function apiFetch2() {
                 //     weekUList.append(testLi);
 
                 // });
-                
 
-                
-
-                
                 
                 // populateLinks(link.week, link.links, link.name );
                 // console.log(link.week);
@@ -90,11 +85,8 @@ function populateLinks(fullData, KeyWeeks) {
             newA.textContent = ` ${element.name} |`;
             newli.appendChild(newA);
             weekUList.appendChild(newli);
-        });
-        
+        }); 
     });
-
-    
    
         // create an a element
     
@@ -114,25 +106,12 @@ function populateLinks(fullData, KeyWeeks) {
         console.log(newA);
             // put the link inside the 
             // newP.appendChild(newA);
-        
-
+    
             //test this 
         newli.innerHTML = `${weeks}: <a href="${newA}" target="_blank">${names}</a>|`;
         console.log(newli);
         weekUList.appendChild(newli);
     });
-    
-
-        
-
-    
-    
-    
-
-
-
-
-
 
     // for (let i = 0; i < link.length;i++) {
         
@@ -157,16 +136,10 @@ function populateLinks(fullData, KeyWeeks) {
 
     //     //test this 
     //     weeks.appendChild(newA);
-
-        
-
     
     //     newli.appendChild(newP);
     //     weeks.appendChild(newli);
     
-        
-        
-
         // let text = `Week${i + 1} `
 
         // 1. Leave the empty link on the home page
@@ -174,8 +147,6 @@ function populateLinks(fullData, KeyWeeks) {
         // 3. Use querySelectorAll to target all of those links of that same class
         // 4. Set the attributes of each link
     }
-
-
 // }
 
 function setHref(links) {
