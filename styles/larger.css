@@ -3,12 +3,39 @@
         position: absolute;
         top:25%;
     }
+
+    #main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        max-width: 760px;
+    }
+
+    iframe {
+        width: 370px;
+    }
+
+    #my-name {
+        padding-right: 0;
+    }
+
+    #map {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    
 }
 
 @media screen and (max-width:600px) {
     nav {
         display: flex;
         flex-direction: column;
+        padding-bottom: 10px;
         
     }
 
@@ -39,5 +66,20 @@
     div#temple-text {
         position: absolute;
         top:47%;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1270px) {
+    .main-div {
+        padding-top: 100px;
+        padding-bottom: 370px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+    .main-div {
+        padding-top: 200px;
+        padding-bottom: 445px;
+        gap: 40px;
     }
 }

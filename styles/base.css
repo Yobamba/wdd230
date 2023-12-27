@@ -10,6 +10,12 @@ body {
     
 }
 
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 :root {
     --primary-color: #38384d;
     --secondary-color: lightgrey;
@@ -105,7 +111,7 @@ picture img {
     height: auto;
 }
 
-#my-pic {
+.my-pic {
     border-radius: 5px;
     box-shadow: 5px 5px 15px black;
     height: 215px;
@@ -232,9 +238,13 @@ a {
 
 header {
     display: flex;
-  
+    gap: 35px;
+    align-items: center;
     background-color: var(--secondary-color);
     width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
    
    
     }
@@ -251,7 +261,7 @@ footer {
     text-align: center;
     padding: 0.5rem;
     bottom: 0;
-    width: 100%;
+    
    
    
    
