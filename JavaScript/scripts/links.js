@@ -1,4 +1,4 @@
-const baseUrl = "https://yobamba.github.io/wdd230/";
+// var baseUrl = "https://yobamba.github.io/wdd230/";
 var weekUList = document.querySelector("#weeks");
 const linkList = document.querySelectorAll('.link-list');
 
@@ -153,7 +153,7 @@ function setHref(links) {
     links.forEach(link => {
         console.log(`First for each ${link}`)
         linkList.forEach(arrayLink => {
-            console.log(`Second for each ${arrayLink}`)
+            console.log(`Second for each ${arrayLink}`);
             arrayLink.setAttribute('href', link);
         })
     });
